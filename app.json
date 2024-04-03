@@ -23,8 +23,8 @@
             "description": "Get This From redis.com",
             "required": true
         },
-        "CHANNELS": {
-            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+        "MAIN_CHANNEL": {
+            "description": "ID of Channel Where Anime Will Upload.",
             "required": false
         },
         "ADMINS": {
