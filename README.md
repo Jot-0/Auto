@@ -8,7 +8,7 @@
 - Try To Resove Any Task From ToDo List!
 
 ## How to deploy?
-<p><a href="https://youtu.be/n1yG6HabW28"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/Jot43/Autoanime/"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
 ## Developer Note
 
