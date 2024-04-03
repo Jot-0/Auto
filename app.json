@@ -24,9 +24,7 @@
             "required": true
         },
         "MAIN_CHANNEL": {
-            "description": "ID of Channel Where Samples And Screenshots Of Anime Will Be Uploaded.
-
-",
+            "description": "ID of Channel Where Samples And Screenshots Of Anime Will Be Uploaded.",
             "required": True
         },
         "CLOUD_CHANNEL": {
