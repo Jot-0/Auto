@@ -24,11 +24,13 @@
             "required": true
         },
         "MAIN_CHANNEL": {
-            "description": "ID of Channel Where Anime Will Upload.",
-            "required": false
+            "description": "ID of Channel Where Samples And Screenshots Of Anime Will Be Uploaded.
+
+",
+            "required": True
         },
-        "ADMINS": {
-            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+        "CLOUD_CHANNEL": {
+            "description": "ID of Channel Where Status Of Proccesses Will Be Shown.",
             "required": true
         },
         "PICS": {
