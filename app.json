@@ -25,7 +25,7 @@
         },
         "MAIN_CHANNEL": {
             "description": "ID of Channel Where Samples And Screenshots Of Anime Will Be Uploaded.",
-            "required": True
+            "required": true
         },
         "CLOUD_CHANNEL": {
             "description": "ID of Channel Where Status Of Proccesses Will Be Shown.",
@@ -39,8 +39,8 @@
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "required": true
         },
-        "AUTH_USERS": {
-            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+        "SEND_SCHEDULE": {
+            "description": "True/False Send Schedule of Upcoming Anime of that day at 00:30 IST, default is False.",
             "required": false
         },
         "AUTH_CHANNEL": {
