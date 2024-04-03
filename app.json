@@ -24,11 +24,11 @@
             "required": true
         },
         "MAIN_CHANNEL": {
-            "description": "ID of Channel Where Samples And Screenshots Of Anime Will Be Uploaded.",
+            "description": "ID of Channel Where Anime Will Upload.",
             "required": true
         },
         "CLOUD_CHANNEL": {
-            "description": "ID of Channel Where Status Of Proccesses Will Be Shown.",
+            "description": "ID of Channel Where Samples And Screenshots Of Anime Will Be Uploaded.",
             "required": true
         },
         "FFMPEG": {
@@ -36,7 +36,7 @@
             "required": false
         },
         "LOG_CHANNEL": {
-            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "description": "ID of Channel Where Status Of Proccesses Will Be Shown.",
             "required": true
         },
         "SEND_SCHEDULE": {
