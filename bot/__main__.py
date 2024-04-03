@@ -256,6 +256,49 @@ def feedp(link, index=0):
         return None
 
 
+async def geter(link, index=0):
+    try:
+        info = await feedp(link, index)
+        if not info:
+            return
+        name = info.title
+        magnet = info.link
+        quality = link.split("/?r=")[1]
+        if name not in get_memory(quality, from_memory=True):
+            if "[Batch]" in name:
+                append_name_in_memory(name, quality, in_memory=True)
+            else:
+                await reporter.report(
+                    f"New File Found!\nNamed - {name}", info=True, log=True
+                )
+                try:
+                    if quality == "1080":
+                        await asyncio.sleep(10)
+                    poster = await get_poster(name)
+                    if poster:
+                        if (poster.split("/")[-1]) not in POST_TRACKER:
+                            thb = await cover_dl(poster)
+                        await bot.send_file(
+                            Var.MAIN_CHANNEL,
+                            file=thb,
+                            caption=(await get_caption(name)),
+                            parse_mode="HTML",
+                        )
+                        POST_TRACKER.append(poster.split("/")[-1])
+                except BaseException:
+                    pass
+                res, msg_id, filename = await upload(
+                    magnet, name, compress=is_compress(from_memory=True)
+                )
+                if res:
+                    append_name_in_memory(name, quality, in_memory=True)
+                    asyncio.create_task(further_work(msg_id, filename, quality))
+    except Exception as error:
+        LOGS.error(format_exc())
+        LOGS.error(str(error))
+
+
+
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile("tas_(.*)")))
 async def _(e):
     await stats(e)
