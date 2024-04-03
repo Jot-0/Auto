@@ -31,8 +31,8 @@
             "description": "ID of Channel Where Status Of Proccesses Will Be Shown.",
             "required": true
         },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
+        "FFMPEG": {
+            "description": "You Can Set Custom Path Of ffmpeg if u want, default is ffmpeg.",
             "required": false
         },
         "LOG_CHANNEL": {
